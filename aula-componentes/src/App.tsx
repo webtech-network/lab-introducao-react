@@ -1,12 +1,14 @@
-import { Hello } from './components/hello';
-import './index.css';
+import { Button } from "./components/Button";
+import { Card } from './components/Card';
+import { Hello } from "./components/Hello";
+import "./index.css";
 
-function App() {
+export function App() {
   return (
     <>
       <Hello />
+      <Card />
+      <Button />
     </>
-  )
+  );
 }
-
-export default App
