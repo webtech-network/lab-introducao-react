@@ -1,5 +1,5 @@
 // Definindo os tipos que a prop vai receber
-interface SaudacaoProps {
+type SaudacaoProps = {
   nome: string;
   idade: number;
   altura?: number; // prop opcional
