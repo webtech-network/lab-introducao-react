@@ -1,4 +1,4 @@
-export default function Hero() {
+export function Hero() {
   return (
     <section id="home" className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 items-center gap-10">
       <div>

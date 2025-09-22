@@ -4,7 +4,7 @@ type CourseCardProps = {
   img: string;
 }
 
-export default function CourseCard({ title, description, img }: CourseCardProps) {
+export function CourseCard({ title, description, img }: CourseCardProps) {
   return (
     <div className="bg-white rounded-xl shadow hover:shadow-xl transition p-6 flex flex-col">
       <img src={img} className="h-40 w-full object-cover rounded-lg" alt={title} />

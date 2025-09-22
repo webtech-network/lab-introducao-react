@@ -1,4 +1,4 @@
-import CourseCard from "./CourseCard";
+import {CourseCard} from "./CourseCard";
 
 const courses = [
   {
@@ -21,7 +21,7 @@ const courses = [
   },
 ];
 
-export default function Courses() {
+export function Courses() {
   return (
     <section id="cursos" className="max-w-6xl mx-auto px-6 py-20">
       <h3 className="text-3xl font-bold text-center text-gray-900">Nossos Cursos</h3>
