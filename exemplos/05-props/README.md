@@ -87,7 +87,10 @@ type ButtonProps = {
 };
 
 const Button = ({ label, variant }: ButtonProps) => {
-    const style = variant === 'primary' ? { backgroundColor: 'blue', color: 'white' } : { backgroundColor: 'gray', color: 'black' };
+    const style =
+        variant === 'primary'
+            ? { backgroundColor: 'blue', color: 'white' }
+            : { backgroundColor: 'gray', color: 'black' };
     return <button style={style}>{label}</button>;
 };
 

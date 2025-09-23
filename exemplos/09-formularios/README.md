@@ -6,10 +6,10 @@ O React Hook Form é uma biblioteca leve e eficiente para gerenciar formulários
 
 ## Por que usar o React Hook Form?
 
-- **Performance**: Minimiza re-renderizações desnecessárias.
-- **Fácil de usar**: API simples e intuitiva.
-- **Validação integrada**: Suporte para validação com bibliotecas como `Yup` ou validação personalizada.
-- **Leve**: Tamanho reduzido comparado a outras bibliotecas de formulários.
+-   **Performance**: Minimiza re-renderizações desnecessárias.
+-   **Fácil de usar**: API simples e intuitiva.
+-   **Validação integrada**: Suporte para validação com bibliotecas como `Yup` ou validação personalizada.
+-   **Leve**: Tamanho reduzido comparado a outras bibliotecas de formulários.
 
 ## Como instalar
 
@@ -24,11 +24,15 @@ npm install react-hook-form
 Aqui está um exemplo simples de como criar um formulário com React Hook Form:
 
 ```jsx
-import React from "react";
-import { useForm } from "react-hook-form";
+import React from 'react';
+import { useForm } from 'react-hook-form';
 
 function App() {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
 
     const onSubmit = (data) => {
         console.log(data);
@@ -38,18 +42,18 @@ function App() {
         <form onSubmit={handleSubmit(onSubmit)}>
             <div>
                 <label>Nome:</label>
-                <input {...register("nome", { required: "O nome é obrigatório" })} />
+                <input {...register('nome', { required: 'O nome é obrigatório' })} />
                 {errors.nome && <p>{errors.nome.message}</p>}
             </div>
             <div>
                 <label>Email:</label>
                 <input
                     type="email"
-                    {...register("email", {
-                        required: "O email é obrigatório",
+                    {...register('email', {
+                        required: 'O email é obrigatório',
                         pattern: {
                             value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-                            message: "Email inválido",
+                            message: 'Email inválido',
                         },
                     })}
                 />
@@ -81,18 +85,22 @@ npm install @hookform/resolvers yup
 Exemplo:
 
 ```jsx
-import React from "react";
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 
 const schema = yup.object().shape({
-    nome: yup.string().required("O nome é obrigatório"),
-    email: yup.string().email("Email inválido").required("O email é obrigatório"),
+    nome: yup.string().required('O nome é obrigatório'),
+    email: yup.string().email('Email inválido').required('O email é obrigatório'),
 });
 
 function App() {
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm({
         resolver: yupResolver(schema),
     });
 
@@ -104,12 +112,12 @@ function App() {
         <form onSubmit={handleSubmit(onSubmit)}>
             <div>
                 <label>Nome:</label>
-                <input {...register("nome")} />
+                <input {...register('nome')} />
                 {errors.nome && <p>{errors.nome.message}</p>}
             </div>
             <div>
                 <label>Email:</label>
-                <input {...register("email")} />
+                <input {...register('email')} />
                 {errors.email && <p>{errors.email.message}</p>}
             </div>
             <button type="submit">Enviar</button>
