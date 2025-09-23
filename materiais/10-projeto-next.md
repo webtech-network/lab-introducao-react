@@ -1,4 +1,4 @@
-# Projeto Simples com Next.js 15: Filmes
+# Projeto de Filmes com Next.js
 
 ## Objetivo
 
@@ -113,8 +113,8 @@ Crie `src/app/page.tsx`:
 ```tsx
 'use client';
 
-import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 type Film = {
     id: number;
@@ -123,7 +123,7 @@ type Film = {
     year: number;
 };
 
-export default function HomePage() {
+export default function Home() {
     const [films, setFilms] = useState<Film[]>([]);
 
     useEffect(() => {
