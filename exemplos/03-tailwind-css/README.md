@@ -85,8 +85,8 @@ Tailwind CSS é um framework CSS utilitário que permite criar designs diretamen
 
 As classes do Tailwind seguem um padrão lógico:
 
-- `{propriedade}-{valor}` (ex: `text-red-500`, `bg-blue-300`)
-- `{propriedade}-{breakpoint}-{valor}` para responsividade (ex: `md:text-lg`)
+-   `{propriedade}-{valor}` (ex: `text-red-500`, `bg-blue-300`)
+-   `{propriedade}-{breakpoint}-{valor}` para responsividade (ex: `md:text-lg`)
 
 ### 3. Principais Categorias de Classes
 
@@ -154,17 +154,15 @@ As classes do Tailwind seguem um padrão lógico:
 
 ```jsx
 function Card() {
-  return (
-    <div className="bg-white rounded-lg shadow-md p-6 m-4 max-w-sm">
-      <h2 className="text-xl font-semibold text-gray-800 mb-2">
-        Título do Card
-      </h2>
-      <p className="text-gray-600 mb-4">Descrição do conteúdo do card.</p>
-      <button className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded transition duration-200">
-        Clique aqui
-      </button>
-    </div>
-  );
+    return (
+        <div className="bg-white rounded-lg shadow-md p-6 m-4 max-w-sm">
+            <h2 className="text-xl font-semibold text-gray-800 mb-2">Título do Card</h2>
+            <p className="text-gray-600 mb-4">Descrição do conteúdo do card.</p>
+            <button className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded transition duration-200">
+                Clique aqui
+            </button>
+        </div>
+    );
 }
 ```
 
@@ -172,24 +170,24 @@ function Card() {
 
 ```jsx
 function Navbar() {
-  return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-white text-xl font-bold">Logo</h1>
-        <div className="hidden md:flex space-x-6">
-          <a href="#" className="text-gray-300 hover:text-white transition">
-            Home
-          </a>
-          <a href="#" className="text-gray-300 hover:text-white transition">
-            Sobre
-          </a>
-          <a href="#" className="text-gray-300 hover:text-white transition">
-            Contato
-          </a>
-        </div>
-      </div>
-    </nav>
-  );
+    return (
+        <nav className="bg-gray-800 p-4">
+            <div className="container mx-auto flex justify-between items-center">
+                <h1 className="text-white text-xl font-bold">Logo</h1>
+                <div className="hidden md:flex space-x-6">
+                    <a href="#" className="text-gray-300 hover:text-white transition">
+                        Home
+                    </a>
+                    <a href="#" className="text-gray-300 hover:text-white transition">
+                        Sobre
+                    </a>
+                    <a href="#" className="text-gray-300 hover:text-white transition">
+                        Contato
+                    </a>
+                </div>
+            </div>
+        </nav>
+    );
 }
 ```
 
@@ -197,23 +195,21 @@ function Navbar() {
 
 ```jsx
 function Form() {
-  return (
-    <form className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
-      <div className="mb-4">
-        <label className="block text-gray-700 text-sm font-bold mb-2">
-          Email
-        </label>
-        <input
-          type="email"
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          placeholder="seu@email.com"
-        />
-      </div>
-      <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
-        Enviar
-      </button>
-    </form>
-  );
+    return (
+        <form className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <div className="mb-4">
+                <label className="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                <input
+                    type="email"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="seu@email.com"
+                />
+            </div>
+            <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                Enviar
+            </button>
+        </form>
+    );
 }
 ```
 
@@ -221,19 +217,19 @@ function Form() {
 
 #### Documentação Oficial
 
-- **Site Principal**: https://tailwindcss.com/
-- **Documentação**: https://tailwindcss.com/docs
-- **Playground**: https://play.tailwindcss.com/
+-   **Site Principal**: https://tailwindcss.com/
+-   **Documentação**: https://tailwindcss.com/docs
+-   **Playground**: https://play.tailwindcss.com/
 
 #### Ferramentas de Busca
 
-- **Tailwind CSS Cheat Sheet**: https://tailwindcomponents.com/cheatsheet/
-- **Classes Search**: https://tailwindsearch.com/
+-   **Tailwind CSS Cheat Sheet**: https://tailwindcomponents.com/cheatsheet/
+-   **Classes Search**: https://tailwindsearch.com/
 
 #### Extensões VS Code
 
-- **Tailwind CSS IntelliSense**: Autocomplete e sugestões
-- **Headwind**: Organiza as classes automaticamente
+-   **Tailwind CSS IntelliSense**: Autocomplete e sugestões
+-   **Headwind**: Organiza as classes automaticamente
 
 ### 6. Dicas Importantes
 
@@ -258,19 +254,19 @@ function Form() {
 
 ```js
 export default {
-  theme: {
-    extend: {
-      colors: {
-        "custom-blue": "#1e40af",
-      },
-      fontFamily: {
-        custom: ["Inter", "sans-serif"],
-      },
-      spacing: {
-        128: "32rem",
-      },
+    theme: {
+        extend: {
+            colors: {
+                'custom-blue': '#1e40af',
+            },
+            fontFamily: {
+                custom: ['Inter', 'sans-serif'],
+            },
+            spacing: {
+                128: '32rem',
+            },
+        },
     },
-  },
 };
 ```
 

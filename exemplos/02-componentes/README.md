@@ -35,21 +35,21 @@ src/
 
 1. Crie uma nova pasta com o nome do componente dentro de `src/components`
 2. Dentro da pasta do componente, crie dois arquivos:
-   - `index.tsx`: para o código do componente
-   - `styles.module.css`: para os estilos
+    - `index.tsx`: para o código do componente
+    - `styles.module.css`: para os estilos
 
 #### Exemplo de Estrutura de Componente (TSX)
 
 ```tsx
 // MeuComponente/index.tsx
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 export function MeuComponente() {
-  return (
-    <div className={styles.container}>
-      <h1>Meu Componente</h1>
-    </div>
-  );
+    return (
+        <div className={styles.container}>
+            <h1>Meu Componente</h1>
+        </div>
+    );
 }
 ```
 
@@ -58,28 +58,28 @@ export function MeuComponente() {
 ```css
 /* MeuComponente/styles.module.css */
 .container {
-  /* Seus estilos aqui */
+    /* Seus estilos aqui */
 }
 ```
 
 ### 3. Boas Práticas
 
-- Use PascalCase para nomes de componentes (ex: `Button`, `CardList`)
-- Use CSS Modules para evitar conflitos de estilo
-- Cada componente deve ter sua própria pasta
-- Mantenha os componentes pequenos e focados em uma única responsabilidade
-- Exporte o componente como função nomeada
+-   Use PascalCase para nomes de componentes (ex: `Button`, `CardList`)
+-   Use CSS Modules para evitar conflitos de estilo
+-   Cada componente deve ter sua própria pasta
+-   Mantenha os componentes pequenos e focados em uma única responsabilidade
+-   Exporte o componente como função nomeada
 
 ### 4. Usando o Componente
 
 ```tsx
-import { MeuComponente } from "./components/MeuComponente";
+import { MeuComponente } from './components/MeuComponente';
 
 function App() {
-  return (
-    <div>
-      <MeuComponente />
-    </div>
-  );
+    return (
+        <div>
+            <MeuComponente />
+        </div>
+    );
 }
 ```

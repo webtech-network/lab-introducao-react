@@ -1,16 +1,16 @@
 .button {
-  background-color: #8e55eb;
-  color: white;
-  font-size: medium;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 0 auto;
-  display: flex;
+    background-color: #8e55eb;
+    color: white;
+    font-size: medium;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: flex;
 }
 .button:hover {
-  background-color: #6b3abf;
+    background-color: #6b3abf;
 }
