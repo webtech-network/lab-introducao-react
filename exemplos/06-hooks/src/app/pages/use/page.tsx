@@ -29,9 +29,9 @@ function UserDetails() {
 // Componente principal do servidor
 export default function UseComponent() {
   return (
-    <ControlPageHooks noBackButton={true}>
-      <h1 className="text-2xl mb-4">Demo do novo `use()` Hook</h1>
-      <UserDetails /> {/* Não precisa de Suspense no servidor */}
-    </ControlPageHooks>
+      <ControlPageHooks noBackButton={true}>
+          <h1 className="fixed top-40 text-4xl text-center">Demo do novo `use()` Hook</h1>
+          <UserDetails /> {/* Não precisa de Suspense no servidor */}
+      </ControlPageHooks>
   );
 }

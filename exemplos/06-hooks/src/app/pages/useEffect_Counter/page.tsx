@@ -7,7 +7,7 @@ export default function UseEffectComponent() {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    console.log("useEffect !!! value: " + value + " checked: " + checked);
+      console.log('useEffect !!! value: ' + value + ' checked: ' + checked);
   }, [value]);
 
   return (

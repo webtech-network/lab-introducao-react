@@ -8,7 +8,7 @@ export default function useCriadoComponent() {
 
   return (
     <ControlPageHooks>
-      <h2 className="fixed top-40 text-4xl text-center ">
+      <h2 className="fixed top-40 text-4xl text-center">
         Hook criado (useCounter)
       </h2>
       <div className="flex flex-col gap-4 justify-center mt-24 items-center-safe">
